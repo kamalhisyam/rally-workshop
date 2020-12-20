@@ -12,7 +12,7 @@ def train_channel(label_train, df_train, feature_columns):
     return linear_est
 
 
-def pred_channel_output(df_test, linear_est, channel):
+def pred_channel(df_test, linear_est, channel):
 
     pred_input_fn = make_input_fn(
         df_test, df_test[channel], num_epochs=1, shuffle=False)
