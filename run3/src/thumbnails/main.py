@@ -37,5 +37,5 @@ rgb_pred_arr = np.empty((len(r_pred_arr), 3))
 for i in range(len(rgb_pred_arr)):
     rgb_pred_arr[i] = [r_pred_arr[i], g_pred_arr[i], b_pred_arr[i]] * 255
 
-convert_1D_array_to_img(img_arr=img_arr.astype(int), size=test_img.size,
+convert_1D_array_to_img(img_arr=rgb_pred_arr.astype(int), size=test_img.size,
                         fname=TEST_OUT_FNAME)
