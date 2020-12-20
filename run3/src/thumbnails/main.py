@@ -5,7 +5,7 @@ from PIL import Image
 from helper.helper import make_input_fn
 from helper.img_to_df import img_to_df
 from convert_to_img import convert_1D_array_to_img
-from train_model import train_channel, pred_output
+from train_model import train_channel, pred_channel
 
 # Filenames
 LABEL_CSV = 'after.csv'
