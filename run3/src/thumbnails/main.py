@@ -10,8 +10,8 @@ from train_model import train_channel, pred_channel
 # Filenames
 LABEL_CSV = 'after.csv'
 FEATURES_CSV = 'before.csv'
-TEST_IN_FNAME = 'test2_before.jpg'
-TEST_OUT_FNAME = 'test4_after_pred.jpg'
+TEST_IN_FNAME = 'test_before_thumbnail.jpg'
+TEST_OUT_FNAME = 'latest_pred.jpg'
 
 rgb_train = pd.read_csv(LABEL_CSV)
 df_train = pd.read_csv(FEATURES_CSV)
